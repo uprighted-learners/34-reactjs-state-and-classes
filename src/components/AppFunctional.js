@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './AppFunctional.css'
 
 export default function AppFunctional() {
     const [value, setValue] = useState('Submit the Form to see this text change')
@@ -14,7 +15,7 @@ export default function AppFunctional() {
     }
 
     return (
-        <div>
+        <div className='app-functional-container'>
             <h2>{value}</h2>
             <form onSubmit={handleSubmit}>
                 <input type="text" id="user-in" onChange={handleInput} />

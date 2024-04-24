@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./AppClass.css";
 
 class App extends React.Component {
     constructor(props) {
@@ -17,7 +17,7 @@ class App extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="app-class-container">
                 <h2>{this.state.value}</h2>
                 <form
                     onSubmit={(evt) => {

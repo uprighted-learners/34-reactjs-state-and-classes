@@ -3,9 +3,11 @@ import TemperatureConverter from './components/TemperatureConverter'
 import AppClass from './components/AppClass'
 import AppFunctional from './components/AppFunctional'
 
+import "./App.css"
+
 export default function App() {
     return (
-        <div>
+        <div className='container'>
             {/* <TemperatureConverter /> */}
             <AppClass />
             <AppFunctional />
